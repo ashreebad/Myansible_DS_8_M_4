@@ -1,0 +1,23 @@
+---
+mystudents:
+ - name: anil
+   address: 
+      - doorno: 345
+      - street: 3rd
+      - place: hyd
+      - pincode: 787878
+
+ - name: ramesh
+   address: 
+      - doorno: 345
+      - street: 3rd
+      - place: hyd
+      - pincode: 787878
+  
+ - name: ankit
+   address: 
+      - doorno: 345
+      - street: 3rd
+      - place: hyd
+      - pincode: 8989898
+      
