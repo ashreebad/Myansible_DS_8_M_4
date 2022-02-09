@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: mywebservers
   become: yes
   gather_facts: yes
   tasks: 
@@ -14,3 +14,15 @@
       name: apache2
       state: started
     when: ansible_os_family =="Debian"
+
+  - name: i wantto install webserver ononly ansible Redhat node
+    yum: 
+      name: httpd
+      state: present
+    when: ansible_os_family =="Redhat"
+
+  - name: i want to start webserver on only ansible Redhat node
+    service: 
+       name: httpd 
+       state: started
+    when: ansible_os_family =="Redhat"    
