@@ -6,6 +6,6 @@
     command: hostname -f 
     register: myresult
 
-  - naae: i want to display my first task result
+  - name: i want to display my first task result
     debug: 
        msg: "{{myresult}}"
