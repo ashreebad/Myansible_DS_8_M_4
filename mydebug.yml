@@ -9,7 +9,7 @@
   - name: i want to display my first task result
     debug: 
        msg: "{{myresult}}"
-       
+
   - name: install tree
     apt: 
       name: tree
@@ -20,4 +20,4 @@
     apt: 
       name: git
       state: present    
-      when: myresult.stderr !=""
+      when: myresult.stderr !==""
